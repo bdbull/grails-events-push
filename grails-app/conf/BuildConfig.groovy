@@ -29,14 +29,15 @@ grails.project.dependency.resolution = {
 		mavenRepo "http://repo.springsource.org/libs-snapshot"
 		mavenRepo "http://repo.grails.org/grails/libs-snapshots-local/"
 		mavenRepo "https://oss.sonatype.org/content/repositories/snapshots"
+	//	mavenRepo "http://mvnrepository.com/artifact/org.atmosphere"
 	}
 	dependencies {
 		compile 'org.grails.plugins:events:1.0.0.BUILD-SNAPSHOT'
-		compile 'org.atmosphere:atmosphere-runtime:2.1.0-SNAPSHOT'
+		compile 'org.atmosphere:atmosphere-runtime:2.1.0'
 	}
 
 	plugins {
-		runtime(":jquery:1.8.2", ":hibernate:3.6.10.2") {
+		runtime(":jquery:1.11.1", ":hibernate:3.6.10.2") {
 			export = false
 		}
 
